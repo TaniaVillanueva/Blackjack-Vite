@@ -1,6 +1,6 @@
 import _ from 'underscore';
 
-export const a = 'Hola mundo';
+
 
 /***
  * @param {Array<string>} tiposDeCarta Ejemplo ['C','D','H','S'];
@@ -10,8 +10,9 @@ export const a = 'Hola mundo';
 
 export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
 
-    if ( !tiposDeCarta ) throw new Error('tiposDeCarta es obligatorio');
+    
     if ( !tiposDeCarta || tiposDeCarta.length === 0) throw new Error('Tipos de carta es obligatorio como un arreglo de string');
+    if ( !tiposEspeciales || tiposEspeciales.length === 0) throw new Error('Tipos especiales es obligatorio como un arreglo de string');
 
     let deck = [];
 
